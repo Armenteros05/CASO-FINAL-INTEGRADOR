@@ -68,18 +68,36 @@ cin >> j;
 int modulo;
 modulo= i%j;
 cout << "El modulo es: " << modulo << endl;
-//añadimos el operador potencia
-cout << "Ahora vamos a hacer una potencia ";
-int k;
-int l;
-cout << endl;
-cout << endl;
-cout << "Ingrese el primer numero: ";
-cin >> k;
-cout << "Ingrese el segundo numero: ";
-cin >> l;
-int potencia;
-potencia= k^l;
-cout << "La potencia es: " << potencia << endl;
+
+    //vamos a complicar las cosas e introducir "min y max"
+    //vamos a introducir el operador min
+    cout << "Ahora vamos a hacer un minimo ";
+    int m;
+    int n;
+    cout << endl;
+    cout << endl;
+    cout << "Ingrese el primer numero: ";
+    cin >> m;
+    cout << "Ingrese el segundo numero: ";
+    cin >> n;
+    int minimo;
+    minimo= min(m,n);
+    cout << "El minimo es: " << minimo << endl;
+    //vamos a introducir el operador max
+    cout << "Ahora vamos a hacer un maximo ";
+    int o;
+    int p;
+    cout << endl;
+    cout << endl;
+    cout << "Ingrese el primer numero: ";
+    cin >> o;
+    cout << "Ingrese el segundo numero: ";
+    cin >> p;
+    int maximo;
+    maximo= max(o,p);
+    cout << "El maximo es: " << maximo << endl;
+
+
     return 0;
+
 }
