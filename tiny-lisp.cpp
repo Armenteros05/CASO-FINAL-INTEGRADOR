@@ -4,6 +4,9 @@ using namespace std;
 
 int main() {
     //añadimos el operador de suma
+    cout << "Ahora vamos a hacer una suma ";
+    cout << endl;
+    cout << endl;
     int a;
     int b;
     cout << "Ingrese el primer numero: ";
@@ -18,6 +21,7 @@ cout << "Ahora vamos a hacer una resta ";
 int c;
 int d;
 cout << endl;
+cout << endl;
 cout << "Ingrese el primer numero: ";
 cin >> c;
 cout << "Ingrese el segundo numero: ";
@@ -29,6 +33,7 @@ cout << "La resta es: " << resta << endl;
 cout << "Ahora vamos a hacer una multiplicacion ";
 int e;
 int f;
+cout << endl;
 cout << endl;
 cout << "Ingrese el primer numero: ";
 cin >> e;
@@ -42,6 +47,7 @@ cout << "Ahora vamos a hacer una division ";
 int g;
 int h;
 cout << endl;
+cout << endl;
 cout << "Ingrese el primer numero: ";
 cin >> g;
 cout << "Ingrese el segundo numero: ";
@@ -54,6 +60,7 @@ cout << "Ahora vamos a hacer un modulo ";
 int i;
 int j;
 cout << endl;
+cout << endl;
 cout << "Ingrese el primer numero: ";
 cin >> i;
 cout << "Ingrese el segundo numero: ";
@@ -61,17 +68,36 @@ cin >> j;
 int modulo;
 modulo= i%j;
 cout << "El modulo es: " << modulo << endl;
-//añadimos el operador potencia
-cout << "Ahora vamos a hacer una potencia ";
-int k;
-int l;
-cout << endl;
-cout << "Ingrese el primer numero: ";
-cin >> k;
-cout << "Ingrese el segundo numero: ";
-cin >> l;
-int potencia;
-potencia= k^l;
-cout << "La potencia es: " << potencia << endl;
+
+    //vamos a complicar las cosas e introducir "min y max"
+    //vamos a introducir el operador min
+    cout << "Ahora vamos a hacer un minimo ";
+    int m;
+    int n;
+    cout << endl;
+    cout << endl;
+    cout << "Ingrese el primer numero: ";
+    cin >> m;
+    cout << "Ingrese el segundo numero: ";
+    cin >> n;
+    int minimo;
+    minimo= min(m,n);
+    cout << "El minimo es: " << minimo << endl;
+    //vamos a introducir el operador max
+    cout << "Ahora vamos a hacer un maximo ";
+    int o;
+    int p;
+    cout << endl;
+    cout << endl;
+    cout << "Ingrese el primer numero: ";
+    cin >> o;
+    cout << "Ingrese el segundo numero: ";
+    cin >> p;
+    int maximo;
+    maximo= max(o,p);
+    cout << "El maximo es: " << maximo << endl;
+
+
     return 0;
+
 }
