@@ -1,38 +1,10 @@
-
+#include Operaciones.h
 #include <iostream>
 using namespace std;
-
 int main() {
-    //vamos a introducir el operador min
-    cout << "Ahora vamos a hacer un minimo ";
-    int m;
-    int n;
-    cout << endl;
-    cout << endl;
-    cout << "Ingrese el primer numero: ";
-    cin >> m;
-    cout << "Ingrese el segundo numero: ";
-    cin >> n;
-    int minimo;
-    minimo= min(m,n);
-    cout << "El minimo es: " << minimo << endl;
-    //vamos a introducir el operador max
-    cout << "Ahora vamos a hacer un maximo ";
-    int o;
-    int p;
-    cout << endl;
-    cout << endl;
-    cout << "Ingrese el primer numero: ";
-    cin >> o;
-    cout << "Ingrese el segundo numero: ";
-    cin >> p;
-    int maximo;
-    maximo= max(o,p);
-    cout << "El maximo es: " << maximo << endl;
-
     //vamos a permitir que el usuario introduzca los operadores que quiera
-    int operacion;
-    cout<<"Ingrese la operación que quiere realizar:(+,-,,/,%,min,max):";
+    char operacion;
+    cout<<"Ingrese la operacion que quiere realizar:(+,-,,/,%,min,max):";
     cin>>operacion;
     if(operacion=='+'){
         //añadimos el operador de suma
@@ -115,7 +87,7 @@ int main() {
         modulo= i%j;
         cout << "El modulo es: " << modulo << endl;
     }
-    else if(operacion=='min'){
+    else if(operacion== 'min.'){
 //vamos a introducir el operador min
         cout << "Ahora vamos a hacer un minimo ";
         int m;
@@ -130,9 +102,21 @@ int main() {
         minimo= min(m,n);
         cout << "El minimo es: " << minimo << endl;
     }
-    else if(operacion=='max'){
+    else if(operacion=='max.'){
+        cout << "Ahora vamos a hacer un maximo ";
+        int o;
+        int p;
+        cout << endl;
+        cout << endl;
+        cout << "Ingrese el primer numero: ";
+        cin >> o;
+        cout << "Ingrese el segundo numero: ";
+        cin >> p;
+        int maximo;
+        maximo= max(o,p);
+        cout << "El maximo es: " << maximo << endl;
 
     }
-    return 0;
+    return operacion;
 
 }
